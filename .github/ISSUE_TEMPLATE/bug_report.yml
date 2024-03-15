@@ -1,0 +1,70 @@
+name: Bug Report
+description: File a bug report
+title: 'issue: '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        When filing a bug report, please make sure you include the following information:
+        - What is the current behavior?
+        - What is the expected behavior?
+        - What are the steps to reproduce?
+        - Which environment are you using?
+
+  # Environment
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Which environment are you using?
+      options:
+        - Production
+        - Staging
+        - Development
+    validations:
+      required: true    
+
+  # Current behavior
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: What is the current behavior?
+      placeholder: Tell us what you see!
+      value: |
+        When I do '....'
+        I see '....'
+    validations:
+      required: true
+
+  # Expected behavior
+
+  - type: textarea
+    id: what-expect
+    attributes:
+      label: Expected behaviour
+      placeholder: Tell us what you expect to see!
+      value: |
+        I expect to see '....'
+    validations:
+      required: true
+
+  # How to reproduce
+  - type: textarea
+    id: how-reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: Tell us how to reproduce this bug!
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output (optional)
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: PowerShell
