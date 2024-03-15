@@ -27,6 +27,8 @@ The `variables.tf` file is used to store the input variables. The input variable
 - [AWS Access Key and Secret Access Key](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys)
 - [AWS IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)
 
+Refer to the [Terraform documentation](https://learn.hashicorp.com/tutorials/terraform/install-cli) for installation instructions.
+
 ## Getting Started
 
 1. Clone the repository
