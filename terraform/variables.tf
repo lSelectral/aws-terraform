@@ -9,15 +9,15 @@ variable "region" {
   default = "eu-central-1"
 }
 
-# variable "s3_name" {
-#   type = string
-#   description = "The name of the S3 bucket to create"
-#   validation {
-#     condition     = length(var.s3_name) > 3
-#     error_message = "Bucket name must be at least 3 characters long"
-#   }
-#   nullable = false
-# }
+variable "s3_name" {
+  type = string
+  description = "The name of the S3 bucket to create"
+  validation {
+    condition     = length(var.s3_name) > 3
+    error_message = "Bucket name must be at least 3 characters long"
+  }
+  nullable = false
+}
 
 variable "vpc_cidr" {
   type        = string
